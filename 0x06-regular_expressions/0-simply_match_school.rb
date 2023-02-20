@@ -1,2 +1,10 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/Holberton/).join
+
+regex = /School/
+string = ARGV[0]
+
+if string =~ regex
+  puts "Match found: #{string.match(regex)}"
+else
+  puts "No match found."
+end
